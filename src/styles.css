@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+clr-stack-content {
+    display: block;
+}
+.stack-grid-block dt{
+    display: none;
+}
+.no-padding {
+    padding: 0 !important;
+}
+clr-stack-block.no-padding dd {
+    padding: 0 !important;
+}
+.stack-data-grid .datagrid{
+    margin: 0px;
+    border-radius: 0px;
+}
+

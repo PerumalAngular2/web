@@ -1,3 +1,37 @@
-<h1>
-  {{title}}
-</h1>
+
+<div class="main-container">
+   <header class="header header-6">
+        <div class="branding">
+        <a href="" class="nav-link">
+            <clr-icon shape="vm-bug"></clr-icon>
+            <span class="title">Project Clarity</span>
+        </a>
+    </div>
+    </header>
+  <div class="content-container">
+    <div class="content-area">
+      <clr-stack-view>
+        <clr-stack-block [clrSbExpanded]="expanded1">
+          <clr-stack-label>
+            Label 1 <span class="badge">8</span>
+          </clr-stack-label>
+          <clr-stack-content class="text-right">3,15,1540.00 $</clr-stack-content>
+          <clr-stack-block class="stack-grid-block no-padding">
+            <clr-stack-content>
+              <clr-datagrid class="stack-data-grid">
+                <clr-dg-column [clrDgField]="'id'">User ID</clr-dg-column>
+                <clr-dg-column [clrDgField]="'name'">Name </clr-dg-column>
+                <clr-dg-column [clrDgField]="'accno'">Ac/No</clr-dg-column>
+                <clr-dg-row *clrDgItems="let user of users">
+                  <clr-dg-cell>{{user.id}}</clr-dg-cell>
+                  <clr-dg-cell>{{user.name}}</clr-dg-cell>
+                  <clr-dg-cell>{{user.accno}}</clr-dg-cell>
+                </clr-dg-row>
+              </clr-datagrid>
+            </clr-stack-content>
+          </clr-stack-block>
+        </clr-stack-block>
+      </clr-stack-view>
+    </div>
+  </div>
+</div>
